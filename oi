@@ -1,0 +1,20 @@
+function tocarAudio(){
+    document.getElementById("audio").play();
+    alert("🎧 Áudio iniciado: mensagem do Agrinho 2026!");
+}
+
+function resposta(correta){
+    let msg = document.getElementById("msg");
+
+    if(correta){
+        msg.innerHTML = "✔ Correto! O agro sustentável protege o meio ambiente.";
+        msg.style.color = "green";
+    } else {
+        msg.innerHTML = "❌ Tente novamente!";
+        msg.style.color = "red";
+    }
+}
+
+window.onload = function(){
+    alert("🌱 Bem-vindo ao site Agrinho 2026!");
+};
